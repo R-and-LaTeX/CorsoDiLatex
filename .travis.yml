@@ -15,6 +15,7 @@ addons:
     - latex-xcolor
     - pgf
     - lmodern
+    - latex-beamer
 script:
 - make -B
 before_deploy:
