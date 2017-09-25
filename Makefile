@@ -18,7 +18,7 @@ $(SLIDES):
 
 export:
 	if [[ -a "$(PROJECT_NAME).zip" ]]; then rm $(PROJECT_NAME).zip; fi;
-	for i in $(wildcard ./**/*.log); do \
+	for i in $(wildcard ./**/*.pdf); do \
 		$(COMPRESS) $(COMPRESSFLAG) $(PROJECT_NAME).zip $$i; \
 	done; \
 
