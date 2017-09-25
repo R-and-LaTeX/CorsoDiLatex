@@ -1,0 +1,22 @@
+language:
+- generic
+dist: trusty
+sudo: true
+addons:
+  apt:
+    packages:
+    - texlive-latex-extra
+    - texlive-luatex
+    - cm-super
+    - latexmk
+    - tex4ht
+    - texlive-fonts-recommended
+    - texlive-lang-italian
+    - latex-xcolor
+    - pgf
+    - lmodern
+    - latex-beamer
+script:
+- make -B
+before_deploy:
+- git fetch --tags

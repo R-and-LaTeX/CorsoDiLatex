@@ -141,3 +141,4 @@ bin/*
 *.kate-swp
 
 *.fuse_*
+*.zip

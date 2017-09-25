@@ -1,0 +1,3 @@
+[submodule "UnipdTheme"]
+	path = UnipdTheme
+	url = https://github.com/R-and-LaTeX/UnipdTheme.git
