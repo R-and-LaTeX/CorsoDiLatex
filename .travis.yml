@@ -16,6 +16,6 @@ addons:
     - pgf
     - lmodern
 script:
-- make
+- make -B
 before_deploy:
 - git fetch --tags
