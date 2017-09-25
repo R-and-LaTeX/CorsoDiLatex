@@ -9,7 +9,7 @@ COMPRESSFLAG := -r
 all: $(SLIDES) export
 
 $(SLIDES):
-	if [[ "$@" != "tema/" ]]; \
+	if [[ "$@" != "UnipdTheme/" ]]; \
 	then \
 		echo "-- BUILDING $@ --"; \
 		cd $@; \
