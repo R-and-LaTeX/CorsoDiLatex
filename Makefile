@@ -13,7 +13,7 @@ $(SLIDES):
 	then \
 		echo "-- BUILDING $@ --"; \
 		cd $@; \
-		$(CC) $(CCFLAGS) -jobname='Slide'; \
+		$(CC) $(CCFLAGS); \
 	fi; \
 
 export:
