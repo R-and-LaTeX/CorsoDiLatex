@@ -1,25 +1,39 @@
-\subsection{Creazione Progetto}
+\section{Linux e MacOS}
+\subsection{Installazione}
 \begin{frame}
-  \frametitle{Creazione Progetto}
+  \frametitle{Compilazione su altri sistemi operativi}
   
-    \begin{textblock*}{5cm}(9cm,3cm)
-      \includegraphics[scale=0.20]{AngryWalter}
-    \end{textblock*}
-    
-    \huge Armiamoci di pazienza!
+  Per GNU/Linux:
+  \begin{itemize}
+   \item Installare \href{http://www.tug.org/texlive/}{TexLive} col proprio 
+gestore di pacchetti (\texttt{apt}, \texttt{pacman}, ...)
+   \item Usare un IDE per Linux:
+   \begin{itemize}
+    \item Kile
+    \item TeXStudio
+    \item Emacs (editor di file generico)
+    \item Sublime (editor di file generico)
+   \end{itemize}
+  \end{itemize}
+  
+  Per MacOS:
+  \begin{itemize}
+   \item Installare \href{http://www.tug.org/mactex/}{MacTeX} e assicurarsi che 
+\texttt{latexmk} sia presente nella vostra installazione 
+    % Non ho un Mac, non ho modo di provare a vedere se c'è :(
+  \end{itemize}
 \end{frame}
 
-\begin{frame}
- 
- Seguire i seguenti passi:
- \begin{enumerate}
-  \item<1-> Click su ``Nuovo''
-  \item<2-> Selezioniamo il progetto vuoto
-  \item<3-> Scegliamo un nome e proseguiamo
- \end{enumerate}
 
- \begin{textblock*}{5cm}(8cm,2cm)
-      \includegraphics[scale=0.25]{steps}
- \end{textblock*}
-   
+\subsection{Compilazione da terminale}
+\begin{frame}
+ \frametitle{Compilazione da terminale}
+ 
+ \begin{itemize}
+  \item Più comoda e veloce
+  \item \texttt{latexmk} semplifica la compilazione
+ \end{itemize}
+ 
+ % FIXME: vogliamo metterci un esempio anche? La slide è vuota praticamente
+
 \end{frame}
