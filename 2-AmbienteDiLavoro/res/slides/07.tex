@@ -2,3 +2,77 @@
  
 \huge Procediamo con il nostro primo Hello World!
 \end{frame}
+
+\subsection{Hello World}
+\begin{frame}[fragile]
+
+\frametitle{Primo Hello World}
+ 
+ Nel file principale (che per semplicità chiamiamo \texttt{main.tex}) inseriamo 
+il seguente codice:
+
+\begin{lstlisting}[frame = single, title={File main.tex}] 
+\input{res/config/package}
+\input{res/config/config}
+
+\author{Davide Polonio}
+\date{27/07/2017}
+\title{Primo progetto di Prova}
+
+\begin{document}
+
+\maketitle
+
+\input{res/listOfSections}
+\end{document}
+ 
+\end{lstlisting}
+
+\end{frame}
+
+\begin{frame}[fragile]
+ 
+ \frametitle{Aggiungiamo codice...}
+ 
+ Creiamo altri file
+ 
+ \begin{lstlisting}[frame = single, title={File res/config/package.tex}]
+\documentclass[12pt]{book}
+
+\usepackage{graphicx}
+\usepackage{float}
+ \end{lstlisting}
+
+ e...
+ 
+ \begin{lstlisting}[frame = single, title={File res/listOfSections.tex}]
+\input{res/sections/parte1}
+ \end{lstlisting}
+
+Nota: negli input non è necessario inserire l'estensione dei file! 
+\end{frame}
+
+\begin{frame}[fragile]
+ 
+ \frametitle{Contenuto, finalmente!}
+ 
+ Finalmente aggiungiamo il contenuto che vogliamo:
+ 
+ \begin{lstlisting}[frame = single, title={File res/sections/parte1.tex}]
+\textit{Ciao mondo!}
+ \end{lstlisting}
+ 
+ Aggiungiamoci anche un'immagine!
+ Copiamola in \texttt{res/img/} rinominiamola con il nome \texttt{immagine}. 
+Ora aggiungiamo il seguente codice al file \texttt{parte1.tex}:
+
+ \begin{lstlisting}[frame = single]
+\begin{figure}[h!]
+ \centering
+ \includegraphics[scale=0.5]{immagine}
+ \caption{Una immagine bellissima.}
+\end{figure}
+ \end{lstlisting}
+
+
+\end{frame}
