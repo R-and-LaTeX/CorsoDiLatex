@@ -1,0 +1,13 @@
+\begin{frame}[fragile]{E-Mail}
+
+Per inserire indirizzi di posta elettronica nel testo non è previsto alcun 
+comando ma è utile crearne uno apposito da aggiungere nel preambolo
+
+\vfill
+
+\begin{lstlisting}
+\newcommand{\mail}[1]{\href{mailto:#1}
+{\texttt{#1}}}
+\end{lstlisting}
+
+\end{frame}

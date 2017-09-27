@@ -1,54 +1,50 @@
 \documentclass{beamer}
 \usepackage[utf8]{inputenc}
-
 \usepackage{../UnipdTheme/Padova/beamerthemePadova}
+\usepackage{listings}
+\lstset{
+    language=[LaTeX]Tex,%C++,
+    keywordstyle=\color{blue}, %\bfseries,
+    basicstyle=\small\ttfamily,
+    commentstyle=\color{green}\ttfamily,
+    stringstyle=\rmfamily,
+    numbers=left,%
+    numberstyle=\scriptsize, %\tiny
+    stepnumber=1,
+    numbersep=8pt,
+    showstringspaces=false,
+    breaklines=true,
+    frameround=ftff,
+    frame=single
+}
+\usepackage{subfig}
+\usepackage{wrapfig}
+\usepackage{lipsum}
 
-\title{Lorem ipsum dolor sit amet}
-\subtitle{Curabitur sit amet mi magna}
+\title{Comandi base}
+\subtitle{Immagini, footnote e link}
 \author{Davide Polonio \& Marco Zanella}
 \date{January 1, 1900}
 
+\graphicspath{{./res/images/}}
 
 \begin{document}
 
 	\maketitle
-
-	\begin{frame}{Outline}
-		\tableofcontents
-	\end{frame}
-
-
-	\section{Introduction}
-
-	\begin{frame}{Introduction}
-
-		Etiam eu interdum ligula
-
-		Nunc mi eros, vulputate in ornare a, viverra eget quam \vspace{.5em}
-
-		\begin{itemize}
-			\item Morbi \textbf{vitae lacus} porta neque tincidunt sodales \vspace{.5em}
-			\item Proin tincidunt, \textbf{neque} at tincidunt mollis \vspace{.5em}
-			\item Ut \alert{lacinia sem a nibh} consequat porttitor
-		\end{itemize}
-	\end{frame}
-
-
-	\section{First section}
-
-	\begin{frame}{First section}
-		\begin{block}{Normal block}
-			Fusce luctus venenatis felis quis semper
-		\end{block}
-
-		\begin{alertblock}{Alert block}
-			$$ E = (x_1 \vee \neg x_2 \vee \neg x_3) \wedge (x_1 \vee x_2 \vee x_4) $$
-		\end{alertblock}
-
-		\begin{exampleblock}{Example block}
-			Proin tincidunt, neque at tincidunt mollis
-		\end{exampleblock}
-	\end{frame}
-
+	\include{res/slides/1-Immagini}
+	\include{res/slides/2-AmbienteEFormati}
+	\include{res/slides/3-EsempioCodiceImmagine}
+	\include{res/slides/4-RisultatoEsempio}
+	\include{res/slides/5-AffiancareImmagini}
+	\include{res/slides/6-EsempioCodiceAffiancareImmagini}
+	\include{res/slides/7-RisultatoEsempioImmaginiAffiancate}
+	\include{res/slides/8-AffiancareImmaginiETesto}
+	\include{res/slides/9-EsempioCodiceAffiancareImmaginiETesto}
+	\include{res/slides/10-RisultatoEsempioImmaginiETesto}
+	\include{res/slides/11-Footnote}
+	\include{res/slides/12-Links}
+	\include{res/slides/13-EsempioCodiceLink}
+	\include{res/slides/14-LinkAlWeb}
+	\include{res/slides/15-Email}
 
 \end{document}
