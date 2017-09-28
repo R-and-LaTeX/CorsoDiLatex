@@ -29,6 +29,14 @@
 
 \graphicspath{{./res/images/}}
 
+\newenvironment<>{newcommandblock}[1]{%
+	\setbeamercolor{block title}{fg=white,bg=blue!75!black}%
+	\begin{block}#2{%
+		#1%
+	}%
+}%
+{\end{block}}%
+
 \begin{document}
 
 	\maketitle
