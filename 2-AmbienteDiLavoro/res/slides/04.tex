@@ -26,14 +26,28 @@ gestore di pacchetti (\texttt{apt}, \texttt{pacman}, ...)
 
 
 \subsection{Compilazione da terminale}
-\begin{frame}
+\begin{frame}[fragile]
  \frametitle{Compilazione da terminale}
  
  \begin{itemize}
   \item Più comoda e veloce
   \item \texttt{latexmk} semplifica la compilazione
  \end{itemize}
- 
- % FIXME: vogliamo metterci un esempio anche? La slide è vuota praticamente
+
+ \begin{exampleblock}{Esempi}
+        \begin{lstlisting}[frame = single, title={Compilare un pdf}] 
+latexmk -pdf
+        \end{lstlisting}
+
+        \begin{lstlisting}[frame = single, title={Compilare un pdf con poco 
+output}] 
+latexmk -pdf -quiet
+        \end{lstlisting}
+        
+        \begin{lstlisting}[frame = single, title={Specificare opzioni al 
+compilatore}] 
+latexmk -pdflatex='pdflatex -interaction=nonstopmode' -pdf
+        \end{lstlisting}
+ \end{exampleblock}
 
 \end{frame}
