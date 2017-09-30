@@ -1,0 +1,19 @@
+\begin{frame}[fragile]{Esempio bibliografia manuale - 1}
+
+\begin{exampleblock}{Bibliografia manuale - Preambolo, testo e inserimento}
+	\begin{lstlisting}
+\documentclass{book}
+
+\begin{document}
+
+\dots{}citazione di un'opera~\cite{autore1:titolo1} bla bla bla\dots{}
+\\
+\dots{}citazione di un'opera~\cite{autore2:titolo2} bla bla bla\dots{}
+
+\cleardoublepage
+%\phantomsection
+\addcontentsline{toc}{chapter}{\bibname}
+	\end{lstlisting}
+\end{exampleblock}
+
+\end{frame}

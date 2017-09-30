@@ -1,0 +1,26 @@
+\begin{frame}[fragile]{Creazione comandi personalizzati}
+
+Spesso può risultare utile creare un nuovo comando
+\begin{itemize}
+	\item Per eseguire ``azioni'' ripetutive
+	\item In modo tale da modificare in modo semplice più parti
+\end{itemize}
+
+La sintassi per definire un nuovo comando è
+\begin{center}
+    \texttt{\textbackslash{}newcommand\{nome\_comando\}[argomenti]
+    \{definizione\}}
+\end{center}
+
+\begin{exampleblock}{Esempio nuovo comando}
+	\begin{lstlisting}
+\newcommand{\trecolori}[3]{
+    \textcolor{red}{#1} 
+    \textcolor{green}{#2} 
+    \textcolor{blue}{#3}
+}
+	\end{lstlisting}
+\end{exampleblock}
+
+
+\end{frame}
