@@ -1,0 +1,27 @@
+\begin{frame}{Bibliografia automatica}
+
+\begin{textblock*}{2cm}(10cm,2cm)
+      \includegraphics[scale=0.28]{res/images/automatic}
+\end{textblock*}
+
+È più complessa ma permette un grado di personalizzazione maggiore
+
+\vfill
+
+Per utilizzarla è necessario
+\begin{itemize}
+	\item Utilizzare il pacchetto \texttt{biblatex} al quale è possibile è possibile specificare una serie di opzioni
+	\begin{itemize}
+		\item \texttt{backend=biber}
+		\item \texttt{style} per definire lo stile delle citazioni
+		\item \texttt{hyperref} e \texttt{backref} nel caso in cui si voglia
+		che ci siano nel documento i collegamenti tra citazione e dati
+		bibliografici
+	\end{itemize}
+	\item importare il pacchetto per le citazioni con il comando 
+	\texttt{\textbackslash{}usepackage[autostyle,italian=guillemets]
+	\{csquotes\}}
+	\item È necessario creare un \emph{database} delle opere
+\end{itemize}
+
+\end{frame}
