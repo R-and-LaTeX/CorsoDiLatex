@@ -1,54 +1,48 @@
 \documentclass{beamer}
 \usepackage[utf8]{inputenc}
-
 \usepackage{../UnipdTheme/Padova/beamerthemePadova}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{listings}
+\lstset{
+    language=[LaTeX]Tex,%C++,
+    keywordstyle=\color{blue}, %\bfseries,
+    basicstyle=\small\ttfamily,
+    commentstyle=\color{green}\ttfamily,
+    stringstyle=\rmfamily,
+    numbers=left,%
+    numberstyle=\scriptsize, %\tiny
+    stepnumber=1,
+    numbersep=8pt,
+    showstringspaces=false,
+    breaklines=true,
+    frameround=ftff,
+    frame=single
+}
 
-\title{Lorem ipsum dolor sit amet}
-\subtitle{Curabitur sit amet mi magna}
+\title{Classi dei documenti}
+\subtitle{Divisione dei documento e tipologie}
 \author{Davide Polonio \& Marco Zanella}
 \date{January 1, 1900}
 
+\newcommand{\mbook}{\texttt{\textcolor{red}{book}}}
+\newcommand{\marticle}{\texttt{\textcolor{blue}{article}}}
+\newcommand{\mreport}{\texttt{\textcolor{green}{report}}}
 
 \begin{document}
 
 	\maketitle
-
-	\begin{frame}{Outline}
-		\tableofcontents
-	\end{frame}
-
-
-	\section{Introduction}
-
-	\begin{frame}{Introduction}
-
-		Etiam eu interdum ligula
-
-		Nunc mi eros, vulputate in ornare a, viverra eget quam \vspace{.5em}
-
-		\begin{itemize}
-			\item Morbi \textbf{vitae lacus} porta neque tincidunt sodales \vspace{.5em}
-			\item Proin tincidunt, \textbf{neque} at tincidunt mollis \vspace{.5em}
-			\item Ut \alert{lacinia sem a nibh} consequat porttitor
-		\end{itemize}
-	\end{frame}
-
-
-	\section{First section}
-
-	\begin{frame}{First section}
-		\begin{block}{Normal block}
-			Fusce luctus venenatis felis quis semper
-		\end{block}
-
-		\begin{alertblock}{Alert block}
-			$$ E = (x_1 \vee \neg x_2 \vee \neg x_3) \wedge (x_1 \vee x_2 \vee x_4) $$
-		\end{alertblock}
-
-		\begin{exampleblock}{Example block}
-			Proin tincidunt, neque at tincidunt mollis
-		\end{exampleblock}
-	\end{frame}
-
+    \input{res/slides/1-Esempio}
+    \input{res/slides/2-Divisione}
+    \input{res/slides/3-Errore}
+    \input{res/slides/4-Tipologie}
+    \input{res/slides/5-Differenze}
+    \input{res/slides/6-Esercizi1e2}
+    \input{res/slides/7-Esercizio3}
+    \input{res/slides/8-PerCasa}
+    \input{res/slides/9-SoluzioneEs1}
+    \input{res/slides/10-SoluzioneEs2}
+    \input{res/slides/11-SoluzioneEs3}
+    \input{res/slides/12-SoluzioneEs4_part1}
+    \input{res/slides/13-SoluzioneEs4_part2}
 
 \end{document}
