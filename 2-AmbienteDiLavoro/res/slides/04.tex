@@ -1,0 +1,53 @@
+\section{Linux e MacOS}
+\subsection{Installazione}
+\begin{frame}
+  \frametitle{Compilazione su altri sistemi operativi}
+  
+  Per GNU/Linux
+  \begin{itemize}
+   \item Installare \href{http://www.tug.org/texlive/}{TexLive} col proprio 
+gestore di pacchetti (\texttt{apt}, \texttt{pacman}, ...)
+   \item Usare un IDE per Linux
+   \begin{itemize}
+    \item Kile
+    \item TeXStudio
+    \item Emacs (editor di file generico)
+    \item Sublime (editor di file generico)
+   \end{itemize}
+  \end{itemize}
+  
+  Per MacOS
+  \begin{itemize}
+   \item Installare \href{http://www.tug.org/mactex/}{MacTeX} e assicurarsi che 
+\texttt{latexmk} sia presente nella vostra installazione 
+    % Non ho un Mac, non ho modo di provare a vedere se c'è :(
+  \end{itemize}
+\end{frame}
+
+
+\subsection{Compilazione da terminale}
+\begin{frame}[fragile]
+ \frametitle{Compilazione da terminale}
+ 
+ \begin{itemize}
+  \item Più comoda e veloce
+  \item \texttt{latexmk} semplifica la compilazione
+ \end{itemize}
+
+ \begin{exampleblock}{Esempi}
+        \begin{lstlisting}[frame = single, title={Compilare un pdf}] 
+latexmk -pdf
+        \end{lstlisting}
+
+        \begin{lstlisting}[frame = single, title={Compilare un pdf con poco 
+output}] 
+latexmk -pdf -quiet
+        \end{lstlisting}
+        
+        \begin{lstlisting}[frame = single, title={Specificare opzioni al 
+compilatore}] 
+latexmk -pdflatex='pdflatex -interaction=nonstopmode' -pdf
+        \end{lstlisting}
+ \end{exampleblock}
+
+\end{frame}
