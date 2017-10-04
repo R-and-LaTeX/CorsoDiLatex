@@ -1,0 +1,32 @@
+\begin{frame}[fragile]
+ 
+  \frametitle{Bordi}
+  
+  \begin{enumerate}
+   \item Per aggiungere i bordi verticali alle tabelle dobbiamo inserire 
+delle sbarrette prima e dopo le \texttt{\textcolor{red}{l}} in \texttt{tabular}
+   \item \texttt{\textbackslash hline} per quelle orizzontali
+  \end{enumerate}
+  \begin{exampleblock}{Esempio}
+    \lstinputlisting{res/examples/tabellaSempliceConBordi.tex}
+  \end{exampleblock}
+\end{frame}
+
+\begin{frame}
+ 
+ \frametitle{Bordi - Risultato}
+ 
+ \begin{table}[h!]
+\centering
+\begin{tabular}{|l|l|l|l|}
+\hline
+Articoli      & Identificativo & Qta \\ \hline
+Matite        & Cancelleria    & 100 \\ \hline
+Penne biro    & Cancelleria    & 120 \\ \hline
+Gomme         & Cancelleria    & 40  \\ \hline
+Raccoglitori  & Ufficio        & 30  \\ \hline
+\end{tabular}
+\caption{Una tabella d'esempio}
+\end{table}
+
+\end{frame}
