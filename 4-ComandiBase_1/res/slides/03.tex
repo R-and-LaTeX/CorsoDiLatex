@@ -1,0 +1,56 @@
+\begin{frame}
+ \frametitle{Personalizzazione}
+ 
+ Gli elenchi possono essere personalizzati a piacimento!
+ \begin{itemize}
+  \item[-]<1-> possiamo inserire
+  \item[/]<2-> il simbolo
+  \item[.]<3-> che più ci piace!
+ \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+ 
+ \begin{center}
+  \huge Come è possibile questa stregoneria?!
+ \end{center}
+ 
+ \begin{figure}[h]
+  \centering
+  \includegraphics{witchcraft}
+ \end{figure}
+
+\end{frame}
+
+\begin{frame}[fragile]
+ \frametitle{Personalizzazione - 2}
+ 
+ Il segreto sta nell'usare le parentesi quadre dopo \texttt{\textbackslash item}
+ 
+ \begin{exampleblock}{Esempio}
+ \begin{lstlisting}[frame = single, title={Una lista puntata personalizzata}] 
+\begin{itemize}
+ \item[-] Tizio
+ \item[/] Caio
+ \item[.] Sempronio
+\end{itemize}
+  \end{lstlisting}
+ \end{exampleblock}
+ 
+ All'interno possiamo metterci anche parole! Ma attenzione...
+\end{frame}
+
+\begin{frame}
+ \frametitle{Personalizzazione - 3}
+ 
+ \begin{itemize}
+  % Intenzionale
+  \item[parole troppo lunghe] potrebbero rompere la formattazione!
+ \end{itemize}
+
+  
+ \begin{textblock*}{5cm}(7cm,5.5cm)
+   \includegraphics{broken}
+ \end{textblock*}
+\end{frame}

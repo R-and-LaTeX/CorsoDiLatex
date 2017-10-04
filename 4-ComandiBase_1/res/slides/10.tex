@@ -1,0 +1,20 @@
+\begin{frame}[fragile]
+ \frametitle{Orientare le pagine - 3}
+ \begin{exampleblock}{Esempio}
+  \begin{lstlisting}[frame = single, title={Ruotare una pagina}] 
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{pdflscape} % Orientazione pagina
+\begin{document}
+Hey, la prossima pagina la posizioneremo orizzontalmente.
+\newpage
+% Inizia la pagina orientata orizzontalmente
+\begin{landscape}
+    % Ora la pagina e' in orizzontale!
+    Questa pagina e' invece orizzontale a quanto pare.
+\end{landscape}
+\end{document}
+  \end{lstlisting}
+ \end{exampleblock}
+
+\end{frame}
