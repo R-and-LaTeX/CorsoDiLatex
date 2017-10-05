@@ -16,8 +16,34 @@ automatico delle slide
   \frametitle{Transizioni nei cambi slide - 2}
   
   Tabella degli effetti disponibili
-  
-  %TODO: inserire tabella degli effetti disponibili!
-  
-  Provate voi stessi! %TODO: inserisci esercizio su transizioni
+ 
+% FIXME: sta tabella è sbarellatissima, da mettere apposto perché il testo 
+% sborda
+\begin{table}[t]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Keyword}       & \textbf{Effetto}           \\ \hline
+transblindshorizontal & La slide successiva scorre sopra quella
+precedente con un movimento da sinistra verso destra \\ \hline
+transblindsvertical   & La slide successiva scorre sopra quella
+precedente con un movimento dall'alto verso il basso \\ \hline
+transboxin            & La slide precedente viene ``assorbita'' in un
+quadrato da quella nuova                       \\ \hline
+transboxout           & La slide successiva si espande a forma di
+quadrato su quella precedente                      \\ \hline
+transdissolve         & La slide successiva si dissolve in un effetto
+``pixelato''                                   \\ \hline
+transglitter          & Un misto tra una dissolvenza a pixel e una
+transizione orizzontale                           \\ \hline
+transwipe             & La slide successiva esegue uno ``swipe'' sopra
+quella precedente da sinistra verso destra    \\ \hline
+transfade             & Effetto di fade tra la slide precedente e
+quella successiva                                  \\ \hline
+\end{tabular}
+\caption[Tabella degli effetti Beamer]{Tabella degli effetti per Beamer. Nota:
+solo uno di questi effetti può essere applicato per pagina: l'applicazione di
+due o più effetti nella stessa slide causerà un errore durante la compilazione.}
+\label{tab:beamer_effects}
+\end{table}
 \end{frame}
