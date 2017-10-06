@@ -1,7 +1,7 @@
 SLIDES := $(sort $(wildcard */))
 SHELL := /bin/bash #Need bash not shell
 CC := latexmk
-CCFLAGS := -pdflatex='pdflatex -interaction=nonstopmode' -pdf -quiet
+CCFLAGS := -pdflatex='pdflatex -interaction=nonstopmode' -pdf
 PROJECT_NAME := CorsoLaTeX
 COMPRESS := zip
 COMPRESSFLAG := -r

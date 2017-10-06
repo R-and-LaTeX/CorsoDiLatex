@@ -3,11 +3,14 @@
 \usepackage{../UnipdTheme/Padova/beamerthemePadova}
 \usepackage[absolute,overlay]{textpos}
 \usepackage{listings}
+% ---- IMPOSTAZIONI PACCHETTI ----
+\definecolor{forestgreen}{rgb}{0.13, 0.55, 0.13}
+
 \lstset{
     language=[LaTeX]Tex,%C++,
     keywordstyle=\color{blue}, %\bfseries,
     basicstyle=\small\ttfamily,
-    commentstyle=\color{green}\ttfamily,
+    commentstyle=\color{forestgreen}\ttfamily,
     stringstyle=\rmfamily,
     numbers=left,%
     numberstyle=\scriptsize, %\tiny
@@ -18,11 +21,10 @@
     frameround=ftff,
     frame=single
 }
-
 \title{Classi dei documenti}
 \subtitle{Divisione dei documento e tipologie}
 \author{Davide Polonio \& Marco Zanella}
-\date{January 1, 1900}
+\date{AA 2017-2018}
 
 \newcommand{\mbook}{\texttt{\textcolor{red}{book}}}
 \newcommand{\marticle}{\texttt{\textcolor{blue}{article}}}
