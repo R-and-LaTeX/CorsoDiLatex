@@ -3,11 +3,14 @@
 \usepackage[utf8]{inputenc}
 \usepackage{listingsutf8}
 \usepackage{listings}
+% ---- IMPOSTAZIONI PACCHETTI ----
+\definecolor{forestgreen}{rgb}{0.13, 0.55, 0.13}
+
 \lstset{
     language=[LaTeX]Tex,%C++,
     keywordstyle=\color{blue}, %\bfseries,
     basicstyle=\small\ttfamily,
-    commentstyle=\color{green}\ttfamily,
+    commentstyle=\color{forestgreen}\ttfamily,
     stringstyle=\rmfamily,
     numbers=left,%
     numberstyle=\scriptsize, %\tiny
@@ -16,8 +19,7 @@
     showstringspaces=false,
     breaklines=true,
     frameround=ftff,
-    frame=single,
-    inputencoding=utf8/latin1
+    frame=single
 }
 \usepackage{../UnipdTheme/Padova/beamerthemePadova}
 \usepackage[absolute,overlay]{textpos}
