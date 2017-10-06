@@ -21,3 +21,12 @@ script:
 - make -B
 before_deploy:
 - git fetch --tags
+deploy:
+  provider: releases
+  api_key:
+    secure: BQ3lN4P0HIj0YzWeYJHQR6g+nbw5WwC4dUROInobRFNVvPwu/ZrPP8bgOVtFYANL6Q/XqAf3p7U1eZjftaFhmYAeLhtGxDoPsOgYQVfiV/EbzSFpJwDgRSmjv+GgK9/8q3sGF9pszS9QBgeeQf/3QwxBk273nUp181g7AMuJf6Lf66Sh81DC/mB1gW1+QV1RgMOaeVtgf9gKGSa23UXssSZOwwCUB/16CmuSCJ8eytHJ20GwihakCdNPY5S6i9UzKe2HEfenfj8b7MGpZAu7Yn+TyGf0EwhLf3GulKmRlVz1lmR6PFyiv8cL7YRNdvgCqF+SyWY6csha3mYhJSFTJe0zMn70L2fMycoQD/oJ8/bhFxh/Ki2asBVJ+oA4vOV30ynuRMvQ5z01en4k0VZMEGXgaxyOs15APsc1tyGPafxS+zNZb5ewduBavC4lN327W0I/gKdS+RGXa5F+Mpto7PpeeVEWiYYyZ27WDeSln98PhDjK9l0nUJvQfcff8uxANZz47KKDLz57+6OUXwiY7jEEopR9NERum62ptTCbgHOdbIkuHIbQVoJRyTct9155MyIuH2GpMSgD3Z0ZKSgdkSIdVLjlwJAdJG2jCiZ2J69+KBGH6F6dkdzwelb/37+Ju6V5SMurDuDhEMI9Zc84I87TA0xa7T+f+icqyODTuiY=
+  file: CorsoLaTeX.zip
+  skip_cleanup: true
+  on:
+    repo: R-and-LaTeX/CorsoDiLatex
+    tags: true
