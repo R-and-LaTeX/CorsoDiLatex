@@ -1,4 +1,4 @@
-\SLIDES := $(sort $(wildcard */))
+SLIDES := $(sort $(wildcard */))
 SHELL := /bin/bash #Need bash not shell
 CC := latexmk
 CCFLAGS := -pdflatex='pdflatex -interaction=nonstopmode' -pdf -quiet
@@ -7,8 +7,6 @@ COMPRESS := zip
 COMPRESSFLAG := -r
 
 all: $(SLIDES) export
-	@echo Done building $(shell git describe) on \
-	$(shell git branch | grep \* | cut -d ' ' -f2)
 
 $(SLIDES):
 	if [[ "$@" != "UnipdTheme/" ]]; \
