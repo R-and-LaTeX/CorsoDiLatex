@@ -1,0 +1,14 @@
+\begin{frame}[fragile]{Soluzioni degli esercizi}
+
+\begin{block}{Esercizio 2 - Wikipedia command}
+
+\begin{lstlisting}
+\newcommand{\myWiki}[2][] {
+	\href{http://en.wikipedia.org/wiki/#2}
+	{\ifthenelse{\equal{#1}{}}{http://en.wikipedia.org/wiki/#2}{#1}}
+}
+\end{lstlisting}
+
+\end{block}
+
+\end{frame}
