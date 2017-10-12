@@ -1,5 +1,7 @@
 \documentclass{beamer}
 \usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{natbib}
 \usepackage{listings}
 % ---- IMPOSTAZIONI PACCHETTI ----
 \definecolor{forestgreen}{rgb}{0.13, 0.55, 0.13}
@@ -21,6 +23,13 @@
 }
 \usepackage{../UnipdTheme/Padova/beamerthemePadova}
 \usepackage[absolute,overlay]{textpos}
+\usepackage[export]{adjustbox}
+
+\newcommand{\myWiki}[2][] {
+	\href{http://en.wikipedia.org/wiki/#2}
+	{\ifthenelse{\equal{#1}{}}{http://en.wikipedia.org/wiki/#2}{#1}}
+}
+
 
 \title{Bibliografia e creazione dei comandi}
 \subtitle{Solo per stomaci forti}
@@ -43,6 +52,16 @@
     \include{res/slides/10-InserimentoBibliografiaAutomatica}
     \include{res/slides/11-EsempioBibliografiaAutomatica_part1}
     \include{res/slides/12-EsempioBibliografiaAutomatica_part2}
+    \include{res/slides/12a-Esercizio}
+    \include{res/slides/12b-Soluzione}
+    \include{res/slides/12b-Soluzione2}
     \include{res/slides/13-ComandiPersonalizzati}
+    \include{res/slides/14-Esercizi1}
+    \include{res/slides/14-Esercizi2}
+    \include{res/slides/15-Soluzioni1}
+    \include{res/slides/15-Soluzioni2}
+
+\bibliographystyle{plainnat}
+\bibliography{bibliografia}
 
 \end{document}
