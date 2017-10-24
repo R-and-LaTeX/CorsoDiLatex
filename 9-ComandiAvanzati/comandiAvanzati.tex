@@ -1,7 +1,7 @@
 \documentclass{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[italian]{babel}
-\usepackage{natbib}
+\usepackage[backend=biber,style=alphabetic,hyperref,backref]{biblatex}
 \usepackage{listings}
 % ---- IMPOSTAZIONI PACCHETTI ----
 \definecolor{forestgreen}{rgb}{0.13, 0.55, 0.13}
@@ -30,6 +30,7 @@
 	{\ifthenelse{\equal{#1}{}}{http://en.wikipedia.org/wiki/#2}{#1}}
 }
 
+\bibliography{bibliografia}
 
 \title{Bibliografia e creazione dei comandi}
 \subtitle{Solo per stomaci forti}
@@ -60,8 +61,5 @@
     \include{res/slides/14-Esercizi2}
     \include{res/slides/15-Soluzioni1}
     \include{res/slides/15-Soluzioni2}
-
-\bibliographystyle{plainnat}
-\bibliography{bibliografia}
 
 \end{document}

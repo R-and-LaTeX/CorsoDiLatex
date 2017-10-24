@@ -3,16 +3,17 @@
 \begin{block}{Lista}
     
 \begin{lstlisting}
-    \usepackage{natbib}
-    ...
-    \begin{enumerate}
-      \item \dots \citet{seneca}
-      \item \dots \citep{nietzsche}
-      \item \dots \citep[p. 42]{abbot}
-    \end{enumerate}
-    \clearpage
-    \bibliographystyle{plainnat}
-    \bibliography{bibliografia}
+\usepackage[natbib = true, backend=biber,style=alphabetic,hyperref,backref]{biblatex}
+\bibliography{bibliografia}
+\begin{document}
+...
+\begin{enumerate}
+\item Prima cit ~\cite{seneca}
+\item Seconda cit ~\cite{nietzsche}
+\item Terza cit ~\cite[p. 42]{abbot}
+\end{enumerate}
+\clearpage
+\printbibliography
 \end{lstlisting}
 
 \end{block}
