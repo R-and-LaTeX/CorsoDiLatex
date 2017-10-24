@@ -17,6 +17,7 @@ addons:
     - pgf
     - lmodern
     - latex-beamer
+    - biber
 script:
 - make -B
 before_deploy:
