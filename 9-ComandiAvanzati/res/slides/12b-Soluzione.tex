@@ -1,0 +1,21 @@
+\begin{frame}[fragile]{Soluzione bibliografia - 1/2}
+
+\begin{block}{Lista}
+    
+\begin{lstlisting}
+\usepackage[backend=biber,style=alphabetic,hyperref,backref]{biblatex}
+\bibliography{bibliografia}
+...
+\begin{enumerate}
+\item Prima cit ~\cite{seneca}
+\item Seconda cit ~\cite{nietzsche}
+\item Terza cit ~\cite[p. 42]{abbot}
+\end{enumerate}
+\clearpage
+\printbibliography
+...
+\end{lstlisting}
+
+\end{block}
+
+\end{frame}

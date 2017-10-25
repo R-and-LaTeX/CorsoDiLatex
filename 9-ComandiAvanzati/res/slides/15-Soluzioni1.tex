@@ -1,0 +1,23 @@
+\begin{frame}[fragile]{Soluzioni degli esercizi}
+
+\begin{block}{Esercizio 1a - Concatenazione di stringhe}
+
+\begin{lstlisting}
+\newcommand{\myConcatOne}[2] {
+	#1#2
+}
+\end{lstlisting}
+
+\end{block}
+
+\begin{block}{Esercizio 1b - Concatenazione di stringhe}
+
+\begin{lstlisting}
+\newcommand{\myConcatTwo}[2][] {
+	{\ifthenelse{\equal{#1}{}}{#2}{#1#2}}
+}
+\end{lstlisting}
+
+\end{block}
+
+\end{frame}
