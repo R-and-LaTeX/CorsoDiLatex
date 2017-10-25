@@ -3,7 +3,7 @@
 \begin{block}{Esercizio 1a - Concatenazione di stringhe}
 
 \begin{lstlisting}
-\newcommand{\myConcat1}[2] {
+\newcommand{\myConcatOne}[2] {
 	#1#2
 }
 \end{lstlisting}
@@ -13,7 +13,7 @@
 \begin{block}{Esercizio 1b - Concatenazione di stringhe}
 
 \begin{lstlisting}
-\newcommand{\myConcat2}[2][] {
+\newcommand{\myConcatTwo}[2][] {
 	{\ifthenelse{\equal{#1}{}}{#2}{#1#2}}
 }
 \end{lstlisting}

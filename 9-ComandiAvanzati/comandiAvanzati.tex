@@ -30,6 +30,14 @@
 	{\ifthenelse{\equal{#1}{}}{http://en.wikipedia.org/wiki/#2}{#1}}
 }
 
+\newcommand{\myConcatOne}[2] {
+	#1#2
+}
+
+\newcommand{\myConcatTwo}[2][] {
+	{\ifthenelse{\equal{#1}{}}{#2}{#1#2}}
+}
+
 \bibliography{bibliografia}
 
 \title{Bibliografia e creazione dei comandi}
