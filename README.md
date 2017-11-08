@@ -1,5 +1,37 @@
 # CorsoDiLatex
-Repo per il corso di LaTeX
+[![Build Status](https://travis-ci.org/R-and-LaTeX/CorsoDiLatex.svg?branch=master)](https://travis-ci.org/R-and-LaTeX/CorsoDiLatex)
+
+## Clonazione
+
+Il repository utilizza sottomoduli. Per clonare correttamente il repository il comando da dare da terminale è:
+```sh
+git clone git@github.com:R-and-LaTeX/CorsoDiLatex.git --recursive
+```
+
+## Compilazione
+Le slide del corso si compilano usando `Makefile` su Linux. Altri ambienti non sono supportati/non si sa se funzionino correttamente.
+Dirigersi nella `root` del progetto e dare, per compilare tutte le slide, il comando:
+```sh
+make -B
+```
+
+### Compilazione separata
+Ogni pacco di slide può essere compilato separatamente, per velocizzare il processo di sviluppo. Se per esempio si vuole compilare solo il primo pacco di slide, il comando da dare è:
+```sh
+make -B 1-Introduzione/
+```
+**Importante**: specificare la slash (/) alla fine del nome della cartella o il make fallirà.
+
+### Norme di progetto
+Durante lo sviluppo son state seguite le seguenti regole (che vi invitiamo a rispettare anche per la sanità mentale dei posteri):
+- Ogni riga ha massimo 80 colonne, non deve superare questa lunghezza
+- Ogni pacco di slide deve risiedere su una cartella separata (obbligatorio ai fini della compilazione con `make`)
+- Il documento deve compilare con `latexmk -pdf`, in quanto è il comando segreto che `make` utilizza (niente magia nera)
+- Ogni pacco di slide è organizzato nella seguente maniera:
+  - Un file principale che raccoglie le configurazioni generiche del documento (packages, comandi)
+  - Un file per slide o per argomento, da raccogliere in una sottocartella
+  - Una cartella separata per immagini e contenuti vari
+  
 
 ## Risultati questionario di valutazione del corso
 
