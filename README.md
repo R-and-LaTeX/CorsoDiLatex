@@ -1,6 +1,17 @@
 # CorsoDiLatex
 [![Build Status](https://travis-ci.org/R-and-LaTeX/CorsoDiLatex.svg?branch=master)](https://travis-ci.org/R-and-LaTeX/CorsoDiLatex)
 
+Slide sul corso di LaTeX tenuto all'Università degli studi di Padova da  [Emanuele Carraro](https://github.com/EmanueleC), [Davide Polonio](https://github.com/Polpetta) e [Marco Zanella](https://github.com/mzanella).
+Potete scaricare [i pdf delle slide nella sezione delle release.](https://github.com/R-and-LaTeX/CorsoDiLatex/releases)
+
+## Altri riferimenti utili
+
+L'altro materiale del corso è disponibile ai seguenti indirizzi:
+- [Guida Galattica per LaTeX](https://github.com/R-and-LaTeX/GuidaGalatticaPerLaTeX)
+- [Mini corso di due lezioni su R](https://github.com/R-and-LaTeX/CorsoDiR)
+- [Tema usato per la creazione delle slide](https://github.com/R-and-LaTeX/UnipdTheme)
+
+
 ## Clonazione
 
 Il repository utilizza sottomoduli. Per clonare correttamente il repository il comando da dare da terminale è:
