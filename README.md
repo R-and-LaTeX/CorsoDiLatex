@@ -46,6 +46,10 @@ Durante lo sviluppo son state seguite le seguenti regole (che vi invitiamo a ris
 
 ## Risultati questionario di valutazione del corso
 
+Totale delle risposte sulla valutazione finale del corso: 16
+
+Totale iscritti sul moodle del corso: 89
+
 ![alt_text](https://raw.githubusercontent.com/R-and-LaTeX/CorsoDiLatex/risultati_questionario/Q1.png)
 ![alt_text](https://raw.githubusercontent.com/R-and-LaTeX/CorsoDiLatex/risultati_questionario/Q2.png)
 ![alt_text](https://raw.githubusercontent.com/R-and-LaTeX/CorsoDiLatex/risultati_questionario/Q3.png)
