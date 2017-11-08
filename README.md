@@ -1,7 +1,54 @@
 # CorsoDiLatex
-Repo per il corso di LaTeX
+[![Build Status](https://travis-ci.org/R-and-LaTeX/CorsoDiLatex.svg?branch=master)](https://travis-ci.org/R-and-LaTeX/CorsoDiLatex)
+
+Slide sul corso di LaTeX tenuto all'Università degli studi di Padova da  [Emanuele Carraro](https://github.com/EmanueleC), [Davide Polonio](https://github.com/Polpetta) e [Marco Zanella](https://github.com/mzanella).
+Potete scaricare [i pdf delle slide nella sezione delle release.](https://github.com/R-and-LaTeX/CorsoDiLatex/releases)
+
+## Altri riferimenti utili
+
+L'altro materiale del corso è disponibile ai seguenti indirizzi:
+- [Guida Galattica per LaTeX](https://github.com/R-and-LaTeX/GuidaGalatticaPerLaTeX)
+- [Mini corso di due lezioni su R](https://github.com/R-and-LaTeX/CorsoDiR)
+- [Tema usato per la creazione delle slide](https://github.com/R-and-LaTeX/UnipdTheme)
+
+
+## Clonazione
+
+Il repository utilizza sottomoduli. Per clonare correttamente il repository il comando da dare da terminale è:
+```sh
+git clone git@github.com:R-and-LaTeX/CorsoDiLatex.git --recursive
+```
+
+## Compilazione
+Le slide del corso si compilano usando `Makefile` su Linux. Altri ambienti non sono supportati/non si sa se funzionino correttamente.
+Dirigersi nella `root` del progetto e dare, per compilare tutte le slide, il comando:
+```sh
+make -B
+```
+
+### Compilazione separata
+Ogni pacco di slide può essere compilato separatamente, per velocizzare il processo di sviluppo. Se per esempio si vuole compilare solo il primo pacco di slide, il comando da dare è:
+```sh
+make -B 1-Introduzione/
+```
+**Importante**: specificare la slash (/) alla fine del nome della cartella o il make fallirà.
+
+### Norme di progetto
+Durante lo sviluppo son state seguite le seguenti regole (che vi invitiamo a rispettare anche per la sanità mentale dei posteri):
+- Ogni riga ha massimo 80 colonne, non deve superare questa lunghezza
+- Ogni pacco di slide deve risiedere su una cartella separata (obbligatorio ai fini della compilazione con `make`)
+- Il documento deve compilare con `latexmk -pdf`, in quanto è il comando segreto che `make` utilizza (niente magia nera)
+- Ogni pacco di slide è organizzato nella seguente maniera:
+  - Un file principale che raccoglie le configurazioni generiche del documento (packages, comandi)
+  - Un file per slide o per argomento, da raccogliere in una sottocartella
+  - Una cartella separata per immagini e contenuti vari
+  
 
 ## Risultati questionario di valutazione del corso
+
+Totale delle risposte sulla valutazione finale del corso: 16
+
+Totale iscritti sul moodle del corso: 89
 
 ![alt_text](https://raw.githubusercontent.com/R-and-LaTeX/CorsoDiLatex/risultati_questionario/Q1.png)
 ![alt_text](https://raw.githubusercontent.com/R-and-LaTeX/CorsoDiLatex/risultati_questionario/Q2.png)
